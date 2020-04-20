@@ -24,8 +24,9 @@ class CardsPage extends Component {
     return (
       <Row>
         <Col md={4}>
+      <a href="https://www.youtube.com/watch?v=FQYl0o12fxY&t=8s" class="custom-card">
         <Card>
-            <CardImg href="https://www.youtube.com/watch?v=FQYl0o12fxY&t=8s" target="_blank" src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
+            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
             <CardBody>
               <CardTitle><b>Lesson 1</b></CardTitle>
               <CardText>
@@ -33,6 +34,7 @@ class CardsPage extends Component {
               </CardText>
             </CardBody>
           </Card>
+      </a>
           <Card>
             <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L4.png" top width="100%" alt="laptop" />
             <CardBody>
