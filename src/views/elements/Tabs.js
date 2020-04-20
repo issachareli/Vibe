@@ -10,9 +10,7 @@ class TabsPage extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: '1',
-      isOpen: false,
     };
-    this.openModal = this.openModal.bind(this)
   }
 
   openModal () {
@@ -119,8 +117,6 @@ class TabsPage extends Component {
                   <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
                   <Button>Go somewhere</Button>
 <div>
-        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
-        <button onClick={this.openModal}>Open</button>
       </div>
                 </Card>
               </Col>
