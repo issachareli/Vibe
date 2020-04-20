@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, CardImg, CardHeader, CardBody } from 'reactstrap';
+import ModalVideo from 'react-modal-video'
 
 class TabsPage extends Component {
   constructor(props) {
@@ -9,9 +10,15 @@ class TabsPage extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: '1',
+      isOpen: false,
     };
+    this.openModal = this.openModal.bind(this)
   }
 
+  openModal () {
+    this.setState({isOpen: true})
+  }
+  
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
@@ -111,6 +118,10 @@ class TabsPage extends Component {
                   <CardTitle>Special Title Treatment</CardTitle>
                   <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
                   <Button>Go somewhere</Button>
+<div>
+        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
+        <button onClick={this.openModal}>Open</button>
+      </div>
                 </Card>
               </Col>
               <Col sm="6">
