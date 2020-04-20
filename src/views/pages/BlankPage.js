@@ -3,7 +3,7 @@ import React from 'react';
 const BlankPage = () => {
   return (
     <div>
-      <span />
+      <iframe is="x-frame-bypass" src="https://ewealthcollege.thinkific.com/"></iframe>
     </div>
   );
 };
