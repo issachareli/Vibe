@@ -24,13 +24,28 @@ class CardsPage extends Component {
     return (
       <Row>
         <Col md={4}>
-          <Card>
-            <CardHeader>Card</CardHeader>
+        <Card>
+            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
             <CardBody>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam-a-0 m-b-smitudin
-              egestas dui nec, fermentum diam. Vivamus vel tincidunt libero, vitae elementu
+              <CardTitle>Lesson 1</CardTitle>
+              <CardText>
+                Setting up your MoneyLiFETM Sponsor Account
+              </CardText>
+              <Button>Button</Button>
             </CardBody>
           </Card>
+          <Card>
+            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
+            <CardBody>
+              <CardTitle>Lesson 4</CardTitle>
+              <CardText>
+                Powerful Financial Coaching Questions (BONUS)
+              </CardText>
+              <Button>Button</Button>
+            </CardBody>
+          </Card>
+        </Col>
+        <Col md={4}>
           <Card>
             <CardImg src={laptopImage} top width="100%" alt="laptop" />
             <CardBody>
@@ -44,28 +59,15 @@ class CardsPage extends Component {
           </Card>
         </Col>
         <Col md={4}>
-          <Card>
-            <CardHeader>Card with Footer</CardHeader>
+         <Card>
+            <CardImg src={laptopImage} top width="100%" alt="laptop" />
             <CardBody>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam-a-0 m-b-smitudin
-              egestas dui nec, fermentum diam. Vivamus vel tincidunt libero, vitae elementu
-            </CardBody>
-            <CardFooter>
-              <Button color="success">Add</Button> <Button>Cancel</Button>
-            </CardFooter>
-          </Card>
-          <Card body>
-            <CardTitle>Special Title Treatment</CardTitle>
-            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-            <Button>Go somewhere</Button>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card color="transparent">
-            <CardHeader>Transparent Card</CardHeader>
-            <CardBody>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam-a-0 m-b-smitudin
-              egestas dui nec, fermentum diam. Vivamus vel tincidunt libero, vitae elementu
+              <CardTitle>Card title</CardTitle>
+              <CardSubtitle>Card subtitle</CardSubtitle>
+              <CardText>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </CardText>
+              <Button>Button</Button>
             </CardBody>
           </Card>
         </Col>
