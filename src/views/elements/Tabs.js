@@ -49,8 +49,8 @@ class TabsPage extends Component {
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             <Row>
-              <Col sm="12" mb>
-                <h4>How to use your MoneyLiFE Sponsor’s Portal (4 Lessons)</h4>
+              <Col sm="12">
+              <div className="m-b"><h4>How to use your MoneyLiFE Sponsor’s Portal (4 Lessons)</h4></div>
               </Col>
         <Col md={4}>
       <a href="https://www.youtube.com/watch?v=FQYl0o12fxY&t=8s" target="_blank" class="custom-card">
