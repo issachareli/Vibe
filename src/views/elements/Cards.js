@@ -25,49 +25,43 @@ class CardsPage extends Component {
       <Row>
         <Col md={4}>
         <Card>
-            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
+            <CardImg href="https://www.youtube.com/watch?v=FQYl0o12fxY&t=8s" target="_blank" src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
             <CardBody>
-              <CardTitle>Lesson 1</CardTitle>
+              <CardTitle><b>Lesson 1</b></CardTitle>
               <CardText>
                 Setting up your MoneyLiFETM Sponsor Account
               </CardText>
-              <Button>Button</Button>
             </CardBody>
           </Card>
           <Card>
-            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
+            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L4.png" top width="100%" alt="laptop" />
             <CardBody>
-              <CardTitle>Lesson 4</CardTitle>
+              <CardTitle><b>Lesson 4</b></CardTitle>
               <CardText>
                 Powerful Financial Coaching Questions (BONUS)
               </CardText>
-              <Button>Button</Button>
             </CardBody>
           </Card>
         </Col>
         <Col md={4}>
           <Card>
-            <CardImg src={laptopImage} top width="100%" alt="laptop" />
+            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L2.png" top width="100%" alt="laptop" />
             <CardBody>
-              <CardTitle>Card title</CardTitle>
-              <CardSubtitle>Card subtitle</CardSubtitle>
+              <CardTitle><b>Lesson 2</b></CardTitle>
               <CardText>
-                Some quick example text to build on the card title and make up the bulk of the card's content.
+                How to create a MoneyLiFE™ Questionnaire.
               </CardText>
-              <Button>Button</Button>
             </CardBody>
           </Card>
         </Col>
         <Col md={4}>
          <Card>
-            <CardImg src={laptopImage} top width="100%" alt="laptop" />
+            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L3.png" top width="100%" alt="laptop" />
             <CardBody>
-              <CardTitle>Card title</CardTitle>
-              <CardSubtitle>Card subtitle</CardSubtitle>
+              <CardTitle><b>Lesson 3</b></CardTitle>
               <CardText>
-                Some quick example text to build on the card title and make up the bulk of the card's content.
+                Understanding the MoneyLiFETM Report
               </CardText>
-              <Button>Button</Button>
             </CardBody>
           </Card>
         </Col>
