@@ -49,7 +49,7 @@ class TabsPage extends Component {
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             <Row>
-              <Col sm="12">
+              <Col sm="12" m-b>
                 <h4>How to use your MoneyLiFE Sponsor’s Portal (4 Lessons)</h4>
               </Col>
         <Col md={4}>
