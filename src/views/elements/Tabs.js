@@ -26,7 +26,4 @@ class TabsPage extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <App />,
-    document.getElementById('root')
-)
+export default TabsPage;
