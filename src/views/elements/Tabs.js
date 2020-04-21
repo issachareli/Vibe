@@ -125,7 +125,7 @@ the link and send it to a test-taker before the MoneyLiFETM Questionnaire</h4></
                 Introducing the MoneyLiFE™ Profile!
               </CardText>
             </CardBody>
-                </Card>
+                </Card> </a>
               </Col>
             </Row>
           </TabPane>
