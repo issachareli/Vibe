@@ -100,7 +100,7 @@ class TabsPage extends Component {
               </CardText>
 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='dE8yF5zHrr0' onClose={() => this.setState({isOpen: false})} />
         <Button color="primary"onClick={this.openModal}>Watch now</Button>
-              </a>  </CardBody>
+          </CardBody>
           </Card>
         </Col>
         <Col md={4}>
