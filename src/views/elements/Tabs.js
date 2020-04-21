@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, CardImg, CardHeader, CardBody } from 'reactstrap';
+import ModalVideo from 'react-modal-video'
+import ReactDOM from 'react-dom'
 
 
 class TabsPage extends Component {
