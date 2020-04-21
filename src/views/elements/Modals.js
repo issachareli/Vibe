@@ -24,7 +24,10 @@ class ModalsPage extends Component {
                     <Modal isOpen={this.state.modal} toggle={this.toggle}>
                         <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
                         <ModalBody>
-                            <div class="embeded embed-responsive-16by9">
+                            <div class="embed-responsive embed-responsive-16by9" style="
+    overflow: inherit;
+    width: 90%;
+">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
 </div>
                         </ModalBody>
