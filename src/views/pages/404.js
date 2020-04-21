@@ -26,9 +26,4 @@ class ErrorPage extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <App />,
-    document.getElementById('root')
-)
-
 export default ErrorPage;
