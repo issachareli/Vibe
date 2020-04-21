@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
 
-class App extends React.Component {
+class ErrorPage extends React.Component {
 
   constructor () {
     super()
