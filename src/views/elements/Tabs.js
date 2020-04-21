@@ -111,20 +111,20 @@ class TabsPage extends Component {
           </TabPane>
           <TabPane tabId="2">
             <Row>
-              <Col sm="6">
-                <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
-                  <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                  <Button>Go somewhere</Button>
-<div>
-      </div>
-                </Card>
+              <Col sm="12">
+              <div className="mb-4 m-t"><h4>Marketing videos to help you introduce MoneyLiFETM. You make like to copy
+the link and send it to a test-taker before the MoneyLiFETM Questionnaire</h4></div>
               </Col>
-              <Col sm="6">
-                <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
-                  <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                  <Button>Go somewhere</Button>
+        <Col md={4}>
+      <a href="https://www.youtube.com/watch?v=t4abJJxqAKs" target="_blank" class="custom-card">
+        <Card>
+            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L5.png" top width="100%" alt="laptop" />
+            <CardBody>
+              <CardTitle><b>Marketing Video 1</b></CardTitle>
+              <CardText>
+                Introducing the MoneyLiFE™ Profile!
+              </CardText>
+            </CardBody>
                 </Card>
               </Col>
             </Row>
