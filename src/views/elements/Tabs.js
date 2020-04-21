@@ -72,7 +72,7 @@ class TabsPage extends Component {
                 Setting up your MoneyLiFETM Sponsor Account
               </CardText>
               <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='FQYl0o12fxY' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Play</Button>
+        <Button color="primary"onClick={this.openModal}>Watch now</Button>
             </CardBody>
           </Card>
      
@@ -85,7 +85,7 @@ class TabsPage extends Component {
                 Powerful Financial Coaching Questions (BONUS)
               </CardText>
 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Lfegw-NHAHI' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Play</Button>
+        <Button color="primary"onClick={this.openModal}>Watch now</Button>
             </CardBody>
           </Card>
         </Col>
@@ -100,7 +100,7 @@ class TabsPage extends Component {
                 How to create a MoneyLiFE™ Questionnaire
               </CardText>
 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='dE8yF5zHrr0' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Play</Button>
+        <Button color="primary"onClick={this.openModal}>Watch now</Button>
             </CardBody>
           </Card>
     </a>
@@ -116,7 +116,7 @@ class TabsPage extends Component {
                 Understanding the MoneyLiFE™ Report
               </CardText>
 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='pDLCJfLbzUo' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Play</Button>
+        <Button color="primary"onClick={this.openModal}>Watch now</Button>
             </CardBody>
           </Card>
    
@@ -139,7 +139,7 @@ class TabsPage extends Component {
                 Introducing the MoneyLiFE™ Profile!
               </CardText>
 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='t4abJJxqAKs' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Play</Button>
+        <Button color="primary"onClick={this.openModal}>Watch now</Button>
             </CardBody>
                 </Card> 
               </Col>
