@@ -112,8 +112,7 @@ class TabsPage extends Component {
           <TabPane tabId="2">
             <Row>
               <Col sm="12">
-              <div className="mb-4 m-t"><h4>Marketing videos to help you introduce MoneyLiFETM. You make like to copy
-the link and send it to a test-taker before the MoneyLiFETM Questionnaire</h4></div>
+              <div className="mb-4 m-t"><h4>Marketing videos to help you introduce MoneyLiFE™.</h4></div>
               </Col>
         <Col md={4}>
       <a href="https://www.youtube.com/watch?v=t4abJJxqAKs" target="_blank" class="custom-card">
