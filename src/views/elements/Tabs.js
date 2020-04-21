@@ -10,7 +10,9 @@ class TabsPage extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: '1',
-    };
+      isOpen: false
+    }
+    this.openModal = this.openModal.bind(this)
   }
 
   openModal () {
@@ -58,17 +60,20 @@ class TabsPage extends Component {
               <div className="mb-4 m-t"><h4>How to use your MoneyLiFE Sponsor’s Portal (4 Lessons)</h4></div>
               </Col>
         <Col md={4}>
-      <a href="https://www.youtube.com/watch?v=FQYl0o12fxY&t=8s" target="_blank" class="custom-card">
         <Card>
-            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
-            <CardBody>
+                 <a href="https://www.youtube.com/watch?v=FQYl0o12fxY&t=8s" target="_blank" class="custom-card">
+ <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
+            </a>
+              <CardBody>
               <CardTitle><b>Lesson 1</b></CardTitle>
               <CardText>
                 Setting up your MoneyLiFETM Sponsor Account
               </CardText>
+              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
+        <button color="primary" onClick={this.openModal}>Open</button>
             </CardBody>
           </Card>
-      </a>
+     
       <a href="https://www.youtube.com/watch?v=Lfegw-NHAHI&t=28s" target="_blank" class="custom-card">
           <Card>
             <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L4.png" top width="100%" alt="laptop" />
