@@ -71,8 +71,8 @@ class TabsPage extends Component {
               <CardText>
                 Setting up your MoneyLiFETM Sponsor Account
               </CardText>
-              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
-        <button color="primary" onClick={this.openModal}>Open</button>
+              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='FQYl0o12fxY' onClose={() => this.setState({isOpen: false})} />
+        <Button color="primary"onClick={this.openModal}>Watch now</Button>
             </CardBody>
           </Card>
      
