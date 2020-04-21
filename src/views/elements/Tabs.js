@@ -76,10 +76,10 @@ class TabsPage extends Component {
             </CardBody>
           </Card>
      
-      <a href="https://www.youtube.com/watch?v=Lfegw-NHAHI&t=28s" target="_blank" class="custom-card">
-          <Card>
+          <Card>      
+          <a href="https://www.youtube.com/watch?v=Lfegw-NHAHI&t=28s" target="_blank" class="custom-card">
             <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L4.png" top width="100%" alt="laptop" />
-            <CardBody>
+                 </a> <CardBody>
               <CardTitle><b>Lesson 4</b></CardTitle>
               <CardText>
                 Powerful Financial Coaching Questions (BONUS)
@@ -88,13 +88,13 @@ class TabsPage extends Component {
         <Button color="primary"onClick={this.openModal}>Play</Button>
             </CardBody>
           </Card>
-      </a>
         </Col>
         <Col md={4}>
-         <a href="https://www.youtube.com/watch?v=dE8yF5zHrr0&t=2s" target="_blank" class="custom-card">
           <Card>
-            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L2.png" top width="100%" alt="laptop" />
-            <CardBody>
+                     <a href="https://www.youtube.com/watch?v=dE8yF5zHrr0&t=2s" target="_blank" class="custom-card">
+                       <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L2.png" top width="100%" alt="laptop" />
+             </a>
+<CardBody>
               <CardTitle><b>Lesson 2</b></CardTitle>
               <CardText>
                 How to create a MoneyLiFE™ Questionnaire
@@ -106,10 +106,11 @@ class TabsPage extends Component {
     </a>
         </Col>
         <Col md={4}>
-          <a href="https://www.youtube.com/watch?v=pDLCJfLbzUo&t=20s" target="_blank" class="custom-card">
          <Card>
+                    <a href="https://www.youtube.com/watch?v=pDLCJfLbzUo&t=20s" target="_blank" class="custom-card">
             <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L3.png" top width="100%" alt="laptop" />
-            <CardBody>
+            </a>
+<CardBody>
               <CardTitle><b>Lesson 3</b></CardTitle>
               <CardText>
                 Understanding the MoneyLiFE™ Report
@@ -118,7 +119,7 @@ class TabsPage extends Component {
         <Button color="primary"onClick={this.openModal}>Play</Button>
             </CardBody>
           </Card>
-      </a>
+   
         </Col>
       </Row>
           </TabPane>
@@ -128,10 +129,11 @@ class TabsPage extends Component {
               <div className="mb-4 m-t"><h4>Marketing videos to help you introduce MoneyLiFE™.</h4></div>
               </Col>
         <Col md={4}>
-      <a href="https://www.youtube.com/watch?v=t4abJJxqAKs" target="_blank" class="custom-card">
         <Card>
+                <a href="https://www.youtube.com/watch?v=t4abJJxqAKs" target="_blank" class="custom-card">
             <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L5.png" top width="100%" alt="laptop" />
-            <CardBody>
+            </a>
+<CardBody>
               <CardTitle><b>Marketing Video 1</b></CardTitle>
               <CardText>
                 Introducing the MoneyLiFE™ Profile!
@@ -139,7 +141,7 @@ class TabsPage extends Component {
 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='t4abJJxqAKs' onClose={() => this.setState({isOpen: false})} />
         <Button color="primary"onClick={this.openModal}>Play</Button>
             </CardBody>
-                </Card> </a>
+                </Card> 
               </Col>
             </Row>
           </TabPane>
