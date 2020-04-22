@@ -13,18 +13,33 @@ class TabsPage extends Component {
     this.state = {
       activeTab: '1',
       isOpen: false,
+      isOpen1: false,
       isOpen2: false,
+      isOpen3: false,
+      isOpen4: false,
       
     }
     this.openModal = this.openModal.bind(this)
     this.openModal1 = this.openModal1.bind(this)
+    this.openModal2 = this.openModal2.bind(this)
+    this.openModal3 = this.openModal3.bind(this)
+    this.openModal4 = this.openModal4.bind(this)
   }
 
-  openModal () {
+      openModal () {
     this.setState({isOpen: true})
   }
-    openModal1 () {
+      openModal1 () {
+    this.setState({isOpen1: true})
+  }
+      openModal2 () {
     this.setState({isOpen2: true})
+  }
+      openModal3 () {
+    this.setState({isOpen3: true})
+  }
+      openModal4 () {
+    this.setState({isOpen4: true})
   }
   
   toggle(tab) {
@@ -69,9 +84,9 @@ class TabsPage extends Component {
               </Col>
         <Col md={4}>
         <Card>
-                 <a href="https://www.youtube.com/watch?v=FQYl0o12fxY&t=8s" target="_blank" class="custom-card">
+               
  <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
-            </a>
+          
               <CardBody>
               <CardTitle><b>Lesson 1</b></CardTitle>
               <CardText>
@@ -89,38 +104,38 @@ class TabsPage extends Component {
               <CardText>
                 Powerful Financial Coaching Questions (BONUS)
               </CardText>
-<ModalVideo channel='youtube' isOpen={this.state.isOpen2} videoId='Lfegw-NHAHI' onClose={() => this.setState({isOpen2: false})} />
+<ModalVideo channel='youtube' isOpen={this.state.isOpen1} videoId='Lfegw-NHAHI' onClose={() => this.setState({isOpen1: false})} />
         <Button color="primary" onClick={this.openModal1}>Watch now</Button>
             </CardBody>
           </Card>
         </Col>
         <Col md={4}>
           <Card>
-                     <a href="https://www.youtube.com/watch?v=dE8yF5zHrr0&t=2s" target="_blank" class="custom-card">
+                     
                      <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L2.png" top width="100%" alt="laptop" />
-             </a>
+            
               <CardBody>
               <CardTitle><b>Lesson 2</b></CardTitle>
               <CardText>
                 How to create a MoneyLiFE™ Questionnaire
               </CardText>
-<ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='dE8yF5zHrr0' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Watch now</Button>
+<ModalVideo channel='youtube' isOpen={this.state.isOpen2} videoId='dE8yF5zHrr0' onClose={() => this.setState({isOpen2: false})} />
+        <Button color="primary"onClick={this.openModal2}>Watch now</Button>
           </CardBody>
           </Card>
         </Col>
         <Col md={4}>
          <Card>
-                    <a href="https://www.youtube.com/watch?v=pDLCJfLbzUo&t=20s" target="_blank" class="custom-card">
+                   
             <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L3.png" top width="100%" alt="laptop" />
-            </a>
+            
             <CardBody>
               <CardTitle><b>Lesson 3</b></CardTitle>
               <CardText>
                 Understanding the MoneyLiFE™ Report
               </CardText>
-<ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='pDLCJfLbzUo' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Watch now</Button>
+<ModalVideo channel='youtube' isOpen3={this.state.isOpen} videoId='pDLCJfLbzUo' onClose={() => this.setState({isOpen3: false})} />
+        <Button color="primary"onClick={this.openModal3}>Watch now</Button>
             </CardBody>
           </Card>
    
@@ -134,16 +149,16 @@ class TabsPage extends Component {
               </Col>
         <Col md={4}>
         <Card>
-                <a href="https://www.youtube.com/watch?v=t4abJJxqAKs" target="_blank" class="custom-card">
+                
             <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L5.png" top width="100%" alt="laptop" />
-            </a>
+            
 <CardBody>
               <CardTitle><b>Marketing Video 1</b></CardTitle>
               <CardText>
                 Introducing the MoneyLiFE™ Profile!
               </CardText>
-<ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='t4abJJxqAKs' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Watch now</Button>
+<ModalVideo channel='youtube' isOpen={this.state.isOpen4} videoId='f8ROSZSEj0I' onClose={() => this.setState({isOpen4: false})} />
+        <Button color="primary"onClick={this.openModal4}>Watch now</Button>
             </CardBody>
                 </Card> 
               </Col>
