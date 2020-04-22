@@ -89,7 +89,7 @@ class TabsPage extends Component {
               <CardText>
                 Powerful Financial Coaching Questions (BONUS)
               </CardText>
-<ModalVideo channel='youtube' isOpen2={this.state.isOpen2} videoId='Lfegw-NHAHI' onClose={() => this.setState({isOpen2: false})} />
+<ModalVideo channel='youtube' isOpen={this.state.isOpen2} videoId='Lfegw-NHAHI' onClose={() => this.setState({isOpen2: false})} />
         <Button color="primary"onClick={this.openModal1}>Watch now</Button>
             </CardBody>
           </Card>
