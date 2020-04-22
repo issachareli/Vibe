@@ -17,6 +17,7 @@ class TabsPage extends Component {
       isOpen2: false,
       isOpen3: false,
       isOpen4: false,
+      hovered: false
       
     }
     this.openModal = this.openModal.bind(this)
@@ -85,7 +86,9 @@ class TabsPage extends Component {
         <Col md={4}>
         <Card>
                
- <CardImg onClick={this.openModal} src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
+ <CardImg onMouseOut={() => this.setState({hovered: true})}
+        onMouseOver={() => this.setState({hovered: false})}
+        style={{transform: `${this.state.hovered ? 'scale(1.5,1.5)' : null}`}} onClick={this.openModal} src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
           
               <CardBody>
               <CardTitle><b>Lesson 1</b></CardTitle>
