@@ -15,10 +15,9 @@
 	}
 }
 .card-img-top {
-  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  width: 100%;
 	 &:hover {
         transform:scale(1.1, 1.1);
-  @include border-top-radius($card-inner-border-radius);
 }
 
 .card-header,
