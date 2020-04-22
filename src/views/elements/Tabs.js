@@ -25,8 +25,8 @@ class TabsPage extends Component {
   }
   
   closeModal () {
-    this.setState({open: false}); }
-  render() {
+    this.setState({open: false}) }
+
     
   toggle(tab) {
     if (this.state.activeTab !== tab) {
