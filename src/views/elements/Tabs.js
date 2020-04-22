@@ -16,8 +16,6 @@ class TabsPage extends Component {
     }
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
-    this.handleModalChangeEnter = this.handleModalChange.bind(this, true);
-    this.handleModalChangeLogin = this.handleModalChange.bind(this, false);
   }
 
   openModal () {
