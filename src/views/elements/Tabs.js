@@ -16,7 +16,7 @@ class TabsPage extends Component {
       openModal1:false, 
       openModal2:false
     }
-    this.openModal = this.openModal.bind(this)
+    this.openModal = this.openModal.bind(this);
     this.openModal1 = this.openModal1.bind(this);
     this.closeModal1 = this.closeModal1.bind(this);
     this.openModal2 = this.openModal2.bind(this);
