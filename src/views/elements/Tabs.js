@@ -82,15 +82,15 @@ class TabsPage extends Component {
             </CardBody>
           </Card>
           <Card>      
-          <a href="https://www.youtube.com/watch?v=Lfegw-NHAHI&t=28s" target="_blank" class="custom-card">
-            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L4.png" top width="100%" alt="laptop" />
-                 </a> <CardBody>
+          
+            <CardImg onClick={this.openModal1} src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L4.png" top width="100%" alt="laptop" />
+              <CardBody>
               <CardTitle><b>Lesson 4</b></CardTitle>
               <CardText>
                 Powerful Financial Coaching Questions (BONUS)
               </CardText>
 <ModalVideo channel='youtube' isOpen={this.state.isOpen2} videoId='Lfegw-NHAHI' onClose={() => this.setState({isOpen2: false})} />
-        <Button color="primary"onClick={this.openModal1}>Watch now</Button>
+        <Button color="primary" onClick={this.openModal1}>Watch now</Button>
             </CardBody>
           </Card>
         </Col>
