@@ -85,7 +85,7 @@ class TabsPage extends Component {
         <Col md={4}>
         <Card>
                
- <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
+ <CardImg onClick={this.openModal} src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L1.png" top width="100%" alt="laptop" />
           
               <CardBody>
               <CardTitle><b>Lesson 1</b></CardTitle>
@@ -112,7 +112,7 @@ class TabsPage extends Component {
         <Col md={4}>
           <Card>
                      
-                     <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L2.png" top width="100%" alt="laptop" />
+                     <CardImg onClick={this.openModal2} src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L2.png" top width="100%" alt="laptop" />
             
               <CardBody>
               <CardTitle><b>Lesson 2</b></CardTitle>
@@ -127,7 +127,7 @@ class TabsPage extends Component {
         <Col md={4}>
          <Card>
                    
-            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L3.png" top width="100%" alt="laptop" />
+            <CardImg onClick={this.openModal3} src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L3.png" top width="100%" alt="laptop" />
             
             <CardBody>
               <CardTitle><b>Lesson 3</b></CardTitle>
@@ -150,7 +150,7 @@ class TabsPage extends Component {
         <Col md={4}>
         <Card>
                 
-            <CardImg src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L5.png" top width="100%" alt="laptop" />
+            <CardImg onClick={this.openModal4} src="https://moneylife-staging-docker.s3-ap-southeast-1.amazonaws.com/media/L5.png" top width="100%" alt="laptop" />
             
 <CardBody>
               <CardTitle><b>Marketing Video 1</b></CardTitle>
