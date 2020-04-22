@@ -12,7 +12,9 @@ class TabsPage extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: '1',
-      isOpen: false
+      isOpen: false,
+      isOpen2: false,
+      
     }
     this.openModal = this.openModal.bind(this)
     this.openModal1 = this.openModal1.bind(this)
@@ -22,7 +24,7 @@ class TabsPage extends Component {
     this.setState({isOpen: true})
   }
     openModal1 () {
-    this.setState({isOpen: true})
+    this.setState({isOpen2: true})
   }
   
   toggle(tab) {
