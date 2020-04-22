@@ -13,21 +13,20 @@ class TabsPage extends Component {
     this.state = {
       activeTab: '1',
       isOpen: false,
-      show: null
+      openModal1:false, 
+      openModal2:false
     }
-    this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);
+    this.openModal = this.openModal.bind(this)
+    this.openModal1 = this.openModal1.bind(this);
+    this.closeModal1 = this.closeModal1.bind(this);
+    this.openModal2 = this.openModal2.bind(this);
+    this.closeModal2 = this.closeModal2.bind(this); 
   }
 
-handleClose() {
-    this.setState({show: id});
+  openModal () {
+    this.setState({isOpen: true})
   }
-
-  handleShow(id) {
-    this.setState({show: id});
-  }
-
-    
+  
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
@@ -78,8 +77,8 @@ handleClose() {
               <CardText>
                 Setting up your MoneyLiFETM Sponsor Account
               </CardText>
-              <ModalVideo channel='youtube' show={this.state.show == 'here'} onHide={this.handleClose} videoId='FQYl0o12fxY' />
-        <Button color="primary" onClick={() => this.handleShow('here')}>Watch now</Button>
+              <ModalVideo channel='youtube' openModal1={this.state.openModal1} videoId='FQYl0o12fxY' onClose={() => this.setState({openModal1: false})} />
+        <Button color="primary"onClick={this.openModal1}>Watch now</Button>
             </CardBody>
           </Card>
           <Card>      
@@ -90,8 +89,8 @@ handleClose() {
               <CardText>
                 Powerful Financial Coaching Questions (BONUS)
               </CardText>
-        <ModalVideo channel='youtube' show={this.state.show == 'here1'} onHide={this.handleClose} videoId='Lfegw-NHAHI' />
-        <Button color="primary" onClick={() => this.handleShow('here1')}>Watch now</Button>
+<ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Lfegw-NHAHI' onClose={() => this.setState({isOpen: false})} />
+        <Button color="primary"onClick={this.openModal}>Watch now</Button>
             </CardBody>
           </Card>
         </Col>
@@ -120,8 +119,8 @@ handleClose() {
               <CardText>
                 Understanding the MoneyLiFE™ Report
               </CardText>
-<ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='pDLCJfLbzUo' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Watch now</Button>
+<ModalVideo channel='youtube' isOpen={this.state.isOpenModal1} videoId='pDLCJfLbzUo' onClose={() => this.setState({isOpenModal1: false})} />
+        <Button color="primary"onClick={this.openModal1}>Watch now</Button>
             </CardBody>
           </Card>
    
