@@ -13,17 +13,19 @@ class TabsPage extends Component {
     this.state = {
       activeTab: '1',
       isOpen: false,
+      show: null
     }
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
-  openModal () {
-    this.setState({isOpen: true})
+handleClose() {
+    this.setState({show: id});
   }
-  
-  closeModal () {
-    this.setState({open: false}) }
+
+  handleShow(id) {
+    this.setState({show: id});
+  }
 
     
   toggle(tab) {
@@ -76,8 +78,8 @@ class TabsPage extends Component {
               <CardText>
                 Setting up your MoneyLiFETM Sponsor Account
               </CardText>
-              <ModalVideo channel='youtube' isOpen={this.state.activeModal === 'L1'} videoId='FQYl0o12fxY' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary" onClick={() => this.openModal('L1')}>Watch now</Button>
+              <ModalVideo channel='youtube' show={this.state.show == 'here'} onHide={this.handleClose} videoId='FQYl0o12fxY' />
+        <Button color="primary" onClick={() => this.handleShow('here')}>Watch now</Button>
             </CardBody>
           </Card>
           <Card>      
@@ -88,8 +90,8 @@ class TabsPage extends Component {
               <CardText>
                 Powerful Financial Coaching Questions (BONUS)
               </CardText>
-        <ModalVideo channel='youtube' isOpen={this.state.activeModal === 'L4'} videoId='FQYl0o12fxY' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary" onClick={() => this.openModal('L4')}>Watch now</Button>
+        <ModalVideo channel='youtube' show={this.state.show == 'here1'} onHide={this.handleClose} videoId='Lfegw-NHAHI' />
+        <Button color="primary" onClick={() => this.handleShow('here1')}>Watch now</Button>
             </CardBody>
           </Card>
         </Col>
