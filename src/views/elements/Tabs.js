@@ -12,15 +12,22 @@ class TabsPage extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: '1',
-      isOpen: false
+      isOpen: false,
     }
-    this.openModal = this.openModal.bind(this)
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.handleModalChangeEnter = this.handleModalChange.bind(this, true);
+    this.handleModalChangeLogin = this.handleModalChange.bind(this, false);
   }
 
   openModal () {
     this.setState({isOpen: true})
   }
   
+  closeModal () {
+    this.setState({open: false}); }
+  render() {
+    
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
@@ -71,8 +78,8 @@ class TabsPage extends Component {
               <CardText>
                 Setting up your MoneyLiFETM Sponsor Account
               </CardText>
-              <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='FQYl0o12fxY' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Watch now</Button>
+              <ModalVideo channel='youtube' isOpen={this.state.activeModal === 'L1'} videoId='FQYl0o12fxY' onClose={() => this.setState({isOpen: false})} />
+        <Button color="primary" onClick={() => this.openModal('L1')}>Watch now</Button>
             </CardBody>
           </Card>
           <Card>      
@@ -83,8 +90,8 @@ class TabsPage extends Component {
               <CardText>
                 Powerful Financial Coaching Questions (BONUS)
               </CardText>
-<ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Lfegw-NHAHI' onClose={() => this.setState({isOpen: false})} />
-        <Button color="primary"onClick={this.openModal}>Watch now</Button>
+        <ModalVideo channel='youtube' isOpen={this.state.activeModal === 'L4'} videoId='FQYl0o12fxY' onClose={() => this.setState({isOpen: false})} />
+        <Button color="primary" onClick={() => this.openModal('L4')}>Watch now</Button>
             </CardBody>
           </Card>
         </Col>
